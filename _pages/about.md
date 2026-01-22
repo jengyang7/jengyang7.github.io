@@ -29,7 +29,7 @@ latest_posts:
 
 Hey, thanks for stopping by! 👋
 
-I'm a Software Engineer at [Daikin](https://www.daikin-solutions.com/home) with 3.5 year of total experience developing apps.
+I'm a Software Engineer at [Daikin](https://www.daikin-solutions.com/home) with 3.5 years of total experience developing apps.
 
 My passion for data and AI led me to earn a Master’s in Data Science from [University of Malaya](https://https://www.um.edu.my/), with research focused on applying large language models to financial sentiment analysis and stock prediction. I hold a Bachelor’s in Computer Science from [Monash University](https://www.monash.edu.my/) and previously interned as an AI Engineer at [Smartpeep](https://www.smartpeep.ai/).
 

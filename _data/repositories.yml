@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jengyang7
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - jengyang7/Financial-Text-Sentiment-Analysis-Using-LLM-for-Stock-Prediction
+  - jengyang7/WalletAI-personal-financial-web-app
