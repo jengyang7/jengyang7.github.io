@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Wallet AI - AI powered Personal Finance Assistant Web App
+description: Track your money using natural language and get instant financial insights — no spreadsheets required.
+img: assets/img/walletai.jpg
 importance: 1
 category: work
+redirect: https://walletai-app.vercel.app/
 related_publications: true
 ---
 

@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Financial Text Sentiment Analysis Using LLM for Stock Market Prediction
+description: Research on applying Large Language Models(LLMs) to financial news sentiment analysis; combined historical stock sentiment scores with OHLCV stock data to investigate whether incorporating sentiment improves next-day stock price prediction accuracy.
+img: assets/img/fyp.png
 importance: 2
 category: work
+redirect: https://github.com/jengyang7/Financial-Text-Sentiment-Analysis-Using-LLM-for-Stock-Prediction
 giscus_comments: true
 ---
 
