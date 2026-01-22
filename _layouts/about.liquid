@@ -76,5 +76,113 @@ layout: default
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
+
+    <!-- Mobile-only Projects Section -->
+    <div class="mobile-section mobile-projects">
+      <h2>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">projects</a>
+      </h2>
+      <div class="projects">
+        {% assign sorted_projects = site.projects | sort: "importance" %}
+        <div class="row row-cols-1">
+          {% for project in sorted_projects limit: 4 %}
+            {% include projects_horizontal.liquid %}
+          {% endfor %}
+        </div>
+        {% if site.projects.size > 4 %}
+          <div class="text-center mt-3">
+            <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline-primary btn-sm">View all projects</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Mobile-only CV Section -->
+    <div class="mobile-section mobile-cv">
+      <h2>
+        <a href="{{ '/cv/' | relative_url }}" style="color: inherit">cv</a>
+        {% assign cv_page = site.pages | where: "permalink", "/cv/" | first %}
+        {% if cv_page.cv_pdf %}
+          <a
+            {% if cv_page.cv_pdf contains '://' %}
+              href="{{ cv_page.cv_pdf }}"
+            {% else %}
+              href="{{ cv_page.cv_pdf | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="float-right"
+            style="font-size: 1.2rem;"
+          >
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        {% endif %}
+      </h2>
+      <div class="cv">
+        {% if site.data.resume %}
+          {% for data in site.data.resume %}
+            {% if site.jsonresume and site.jsonresume.size > 0 %}
+              {% unless site.jsonresume contains data[0] %}
+                {% continue %}
+              {% endunless %}
+            {% endif %}
+            {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+              <div>
+                {% case data[0] %}
+                  {% when 'basics' %}
+                    {% include resume/basics.liquid %}
+                  {% when 'education' %}
+                    {% include resume/education.liquid %}
+                  {% when 'work' %}
+                    {% include resume/work.liquid %}
+                  {% when 'volunteer' %}
+                    {% include resume/volunteer.liquid %}
+                  {% when 'projects' %}
+                    {% include resume/projects.liquid %}
+                  {% when 'awards' %}
+                    {% include resume/awards.liquid %}
+                  {% when 'skills' %}
+                    {% include resume/skills.liquid %}
+                  {% when 'publications' %}
+                    {% include resume/publications.liquid %}
+                  {% when 'languages' %}
+                    {% include resume/languages.liquid %}
+                  {% when 'interests' %}
+                    {% include resume/interests.liquid %}
+                  {% when 'certificates' %}
+                    {% include resume/certificates.liquid %}
+                  {% when 'references' %}
+                    {% include resume/references.liquid %}
+                  {% else %}
+                {% endcase %}
+              </div>
+            </div>
+          {% endfor %}
+        {% elsif site.data.cv %}
+          {% for entry in site.data.cv %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+              <div>
+                {% if entry.type == 'list' %}
+                  {% include cv/list.liquid %}
+                {% elsif entry.type == 'map' %}
+                  {% include cv/map.liquid %}
+                {% elsif entry.type == 'nested_list' %}
+                  {% include cv/nested_list.liquid %}
+                {% elsif entry.type == 'time_table' %}
+                  {% include cv/time_table.liquid %}
+                {% elsif entry.type == 'list_groups' %}
+                  {% include cv/list_groups.liquid %}
+                {% else %}
+                  {{ entry.contents }}
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
   </article>
 </div>

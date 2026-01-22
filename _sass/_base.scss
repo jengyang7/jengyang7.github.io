@@ -218,6 +218,37 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+// Mobile profile - centered image at 40% screen width
+@media (max-width: 575px) {
+  .profile {
+    width: 100%;
+    float: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 1.5rem auto !important;
+    padding: 0 !important;
+    text-align: center;
+
+    img {
+      width: 40vw;
+      margin: 0 auto !important;
+    }
+
+    figure {
+      width: 40vw;
+      margin: 0 auto !important;
+      padding: 0 !important;
+    }
+  }
+
+  .profile.float-right,
+  .profile.float-left {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
@@ -1525,4 +1556,56 @@ figure.cover {
 
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
+}
+
+// Mobile-only sections (Projects and CV on homepage)
+.mobile-section {
+  display: none; // Hidden by default (desktop)
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  h2 {
+    margin-bottom: 1.5rem;
+    
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// Show mobile sections only on small screens (mobile)
+@media (max-width: 768px) {
+  .mobile-section {
+    display: block;
+  }
+  
+  .mobile-projects {
+    .projects .card {
+      margin-bottom: 1rem;
+    }
+    
+    .btn-outline-primary {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      
+      &:hover {
+        background-color: var(--global-theme-color);
+        color: var(--global-bg-color);
+      }
+    }
+  }
+  
+  .mobile-cv {
+    .card {
+      .card-title {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
