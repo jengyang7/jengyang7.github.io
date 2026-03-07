@@ -1,11 +1,13 @@
 ---
 layout: page
 title: Wallet AI - AI powered Personal Finance Assistant Web App
-description: Track your money using natural language and get instant financial insights — no spreadsheets required.
-img: assets/img/walletai.jpg
+description: A smart personal finance tracker with a conversational AI interface that lets users ask questions about their spending in natural language and get instant insights, dynamic charts, and intelligent categorization.
+img: assets/img/walletai.png
 importance: 1
 category: work
-redirect: https://walletai-app.vercel.app/
+timeline: Aug 2025 – Jan 2026
+page_url: https://walletai-app.vercel.app/
+source_url: https://github.com/jengyang7/WalletAI-personal-financial-web-app
 related_publications: true
 ---
 

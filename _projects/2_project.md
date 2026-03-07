@@ -1,11 +1,13 @@
 ---
 layout: page
 title: Financial Text Sentiment Analysis Using LLM for Stock Market Prediction
-description: Research on applying Large Language Models(LLMs) to financial news sentiment analysis; combined historical stock sentiment scores with OHLCV stock data to investigate whether incorporating sentiment improves next-day stock price prediction accuracy.
+description: This research explores how Large Language Models can be fine-tuned for financial sentiment analysis and whether those sentiment signals improve stock price prediction when combined with traditional market data.
 img: assets/img/fyp.png
 importance: 2
 category: work
-redirect: https://github.com/jengyang7/Financial-Text-Sentiment-Analysis-Using-LLM-for-Stock-Prediction
+timeline: Nov 2024 – Jul 2025
+page_url: https://jengyang7.github.io/Financial-Text-Sentiment-Analysis-Using-LLM-for-Stock-Prediction/
+source_url: https://github.com/jengyang7/Financial-Text-Sentiment-Analysis-Using-LLM-for-Stock-Prediction
 giscus_comments: true
 ---
 
