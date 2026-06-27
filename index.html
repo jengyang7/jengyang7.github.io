@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeng Yang Kong (Jayden)</title>
+  <meta name="description" content="Jeng Yang Kong (Jayden) — Software Engineer specialising in multi-agent LLM systems, RAG pipelines, and applied AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+
+    <!-- ============ LEFT SIDEBAR ============ -->
+    <aside class="sidebar">
+      <h1 class="name">Jeng Yang Kong<br /><span class="alias">(Jayden)</span></h1>
+      <nav class="links">
+        <a href="https://linkedin.com/in/jengyangkong" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jengyang7" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:jengyang.dev@gmail.com">Email</a>
+      </nav>
+
+      <img class="photo" src="assets/prof_pic.webp" alt="Jeng Yang Kong (Jayden)" />
+
+      <p class="caption">Software Engineer · Singapore PR</p>
+
+      <!-- <a class="resume-btn" href="assets/resume.pdf" target="_blank" rel="noopener">
+        ↓ Download Résumé
+      </a> -->
+
+      <div class="sidebar-section">
+        <h2 class="section-label">Education</h2>
+        <div class="edu">
+          <div class="edu-head">
+            <span class="edu-school">Universiti Malaya</span>
+            <span class="edu-date">2023 – 2025</span>
+          </div>
+          <p class="edu-meta">M.Data Science · CGPA 4.0</p>
+        </div>
+        <div class="edu">
+          <div class="edu-head">
+            <span class="edu-school">Monash University</span>
+            <span class="edu-date">2018 – 2021</span>
+          </div>
+          <p class="edu-meta">B.Computer Science (Advanced)</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <div class="content">
+
+      <!-- Intro message -->
+    </br>
+    </br>
+      <p class="message">
+        <!-- <strong>ABOUT ME.</strong> -->
+        Software Engineer with 4 years' experience and a
+        Master's in Data Science. I build production software and applied AI —
+        multi-agent LLM systems, RAG pipelines, and domain-specific fine-tuning.
+      </p>
+    </br>
+      <p class="message subtle">
+        <strong>Stack:</strong> LangGraph · RAG · Hybrid Retrieval · Reranking ·
+        LLM Evaluation · LangChain · LangSmith · pgvector · SFT/QLoRA ·
+        Python · TypeScript · React · Next.js · FastAPI · PostgreSQL · Docker · AWS
+      </p>
+
+      <div class="columns">
+
+        <!-- ---- LEFT COLUMN: PROJECTS ---- -->
+        <section class="col">
+          <h2 class="section-label">Projects</h2>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">PolicyLens — Multi-Agent AI Policy Research System</span>
+            </div>
+            <p class="entry-meta">LangGraph · FastAPI · PostgreSQL · Next.js
+              — <a href="https://policylens-multiagent-ai-policy-research-system.vercel.app/" target="_blank" rel="noopener">page</a> ·
+              <a href="https://github.com/jengyang7/policylens-multiagent-ai-policy-research-system" target="_blank" rel="noopener">code</a></p>
+            <ul class="entry-points">
+              <li>Multi-agent engine — 4+ LLM roles, parallel Send fan-out</li>
+              <li>3-layer memory: typed graph state, context compaction, PostgreSQL checkpointing</li>
+              <li>Citation faithfulness 72% → 89% across 20 benchmark queries</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">WalletAI — AI-Powered Personal Financial Assistant</span>
+            </div>
+            <p class="entry-meta">RAG · Gemini API · PostgreSQL · Next.js · TypeScript
+              — <a href="https://walletai-app.vercel.app/" target="_blank" rel="noopener">page</a> ·
+              <a href="https://github.com/jengyang7/WalletAI-personal-financial-web-app" target="_blank" rel="noopener">code</a></p>
+            <ul class="entry-points">
+              <li>Agentic assistant — function calling, intent routing, chart generation</li>
+              <li>RAG over financial docs + Gemini Vision receipt OCR</li>
+              <li>Multi-user backend on Supabase RLS, CI/CD on Vercel</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">Financial Text Sentiment Analysis for Stock Prediction</span>
+            </div>
+            <p class="entry-meta">Python · PyTorch · PEFT/QLoRA · Optuna
+              — <a href="https://jengyang7.github.io/Financial-Text-Sentiment-Analysis-Using-LLM-for-Stock-Prediction/" target="_blank" rel="noopener">page</a> ·
+              <a href="https://github.com/jengyang7/Financial-Text-Sentiment-Analysis-Using-LLM-for-Stock-Prediction" target="_blank" rel="noopener">code</a></p>
+            <ul class="entry-points">
+              <li>SFT + QLoRA fine-tuning — 99.3% sentiment accuracy</li>
+              <li>Curated 35k labelled samples from 160k+ news articles</li>
+              <li>Tuned LSTM / XGBoost / RF — TSLA RMSE −10.9%, R² +4.4%</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- ---- RIGHT COLUMN: EXPERIENCE + EDUCATION ---- -->
+        <section class="col">
+          <h2 class="section-label">Experience</h2>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">Software Engineer</span>
+              <span class="entry-date">Jul 2023 – Present</span>
+            </div>
+            <p class="entry-meta">Daikin · Singapore</p>
+            <ul class="entry-points">
+              <li>RAG support chatbot — hybrid retrieval, SSE streaming, 0.88 faithfulness</li>
+              <li>SSD MobileNet occupancy detection wired into HVAC control</li>
+              <li>Energy dashboard −25% load time; QC tooling −80% QA prep</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">iOS Engineer</span>
+              <span class="entry-date">Jul 2021 – Jul 2022</span>
+            </div>
+            <p class="entry-meta">FPLE Group · Kuala Lumpur, Malaysia</p>
+            <ul class="entry-points">
+              <li>Shipped production eCommerce app — Swift (MVVM, Combine, UIKit), REST APIs</li>
+              <li>Reusable UIKit components per Apple HIG — UI duplication −30%</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">AI Engineer Intern</span>
+              <span class="entry-date">Dec 2020 – Feb 2021</span>
+            </div>
+            <p class="entry-meta">SmartPeep · Johor Bahru, Malaysia</p>
+            <ul class="entry-points">
+              <li>Computer-vision fall detection — preprocessing, training, evaluation</li>
+              <li>Labelled video data + augmentation to boost small-dataset performance</li>
+              <li>AI algorithm R&amp;D in an agile team, reporting to the founder</li>
+            </ul>
+          </article>
+        </section>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
