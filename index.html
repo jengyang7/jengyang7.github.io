@@ -29,24 +29,6 @@
       <!-- <a class="resume-btn" href="assets/resume.pdf" target="_blank" rel="noopener">
         ↓ Download Résumé
       </a> -->
-
-      <div class="sidebar-section">
-        <h2 class="section-label">Education</h2>
-        <div class="edu">
-          <div class="edu-head">
-            <span class="edu-school">Universiti Malaya</span>
-            <span class="edu-date">2023 – 2025</span>
-          </div>
-          <p class="edu-meta">M.Data Science · CGPA 4.0</p>
-        </div>
-        <div class="edu">
-          <div class="edu-head">
-            <span class="edu-school">Monash University</span>
-            <span class="edu-date">2018 – 2021</span>
-          </div>
-          <p class="edu-meta">B.Computer Science (Advanced)</p>
-        </div>
-      </div>
     </aside>
 
     <!-- ============ MAIN CONTENT ============ -->
@@ -54,12 +36,12 @@
 
       <!-- Intro message -->
     </br>
-    </br>
+    <!-- </br> -->
       <p class="message">
-        <!-- <strong>ABOUT ME.</strong> -->
-        Software Engineer with 4 years' experience and a
-        Master's in Data Science. I build production software and applied AI —
-        multi-agent LLM systems, RAG pipelines, and domain-specific fine-tuning.
+        <strong>ABOUT ME.</strong> Software Engineer focused on applied AI, with 4
+        years' experience and a Master's in Data Science. I build AI products end
+        to end — multi-agent LLM systems, RAG pipelines, and domain-specific
+        fine-tuning.
       </p>
     </br>
       <p class="message subtle">
@@ -70,7 +52,50 @@
 
       <div class="columns">
 
-        <!-- ---- LEFT COLUMN: PROJECTS ---- -->
+        <!-- ---- LEFT COLUMN: EXPERIENCE ---- -->
+        <section class="col">
+          <h2 class="section-label">Experience</h2>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">Software Engineer</span>
+              <span class="entry-date">Jul 2023 – Present</span>
+            </div>
+            <p class="entry-meta">Daikin · Singapore</p>
+            <ul class="entry-points">
+              <li>RAG support chatbot — hybrid retrieval, SSE streaming, 0.88 faithfulness</li>
+              <li>SSD MobileNet occupancy detection wired into HVAC control</li>
+              <li>Energy dashboard −25% load time; QC tooling −80% QA prep</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">iOS Engineer</span>
+              <span class="entry-date">Jul 2021 – Jul 2022</span>
+            </div>
+            <p class="entry-meta">FPLE · Kuala Lumpur, Malaysia</p>
+            <ul class="entry-points">
+              <li>Shipped production eCommerce app — Swift (MVVM, Combine, UIKit), REST APIs</li>
+              <li>Reusable UIKit components per Apple HIG — UI duplication −30%</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <span class="entry-title">AI Engineer Intern</span>
+              <span class="entry-date">Dec 2020 – Feb 2021</span>
+            </div>
+            <p class="entry-meta">SmartPeep · Johor Bahru, Malaysia</p>
+            <ul class="entry-points">
+              <li>Computer-vision fall detection — preprocessing, training, evaluation</li>
+              <li>Labelled video data + augmentation to boost small-dataset performance</li>
+              <li>AI algorithm R&amp;D in an agile team, reporting to the founder</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- ---- RIGHT COLUMN: PROJECTS ---- -->
         <section class="col">
           <h2 class="section-label">Projects</h2>
 
@@ -117,51 +142,27 @@
           </article>
         </section>
 
-        <!-- ---- RIGHT COLUMN: EXPERIENCE + EDUCATION ---- -->
-        <section class="col">
-          <h2 class="section-label">Experience</h2>
-
-          <article class="entry">
-            <div class="entry-head">
-              <span class="entry-title">Software Engineer</span>
-              <span class="entry-date">Jul 2023 – Present</span>
-            </div>
-            <p class="entry-meta">Daikin · Singapore</p>
-            <ul class="entry-points">
-              <li>RAG support chatbot — hybrid retrieval, SSE streaming, 0.88 faithfulness</li>
-              <li>SSD MobileNet occupancy detection wired into HVAC control</li>
-              <li>Energy dashboard −25% load time; QC tooling −80% QA prep</li>
-            </ul>
-          </article>
-
-          <article class="entry">
-            <div class="entry-head">
-              <span class="entry-title">iOS Engineer</span>
-              <span class="entry-date">Jul 2021 – Jul 2022</span>
-            </div>
-            <p class="entry-meta">FPLE Group · Kuala Lumpur, Malaysia</p>
-            <ul class="entry-points">
-              <li>Shipped production eCommerce app — Swift (MVVM, Combine, UIKit), REST APIs</li>
-              <li>Reusable UIKit components per Apple HIG — UI duplication −30%</li>
-            </ul>
-          </article>
-
-          <article class="entry">
-            <div class="entry-head">
-              <span class="entry-title">AI Engineer Intern</span>
-              <span class="entry-date">Dec 2020 – Feb 2021</span>
-            </div>
-            <p class="entry-meta">SmartPeep · Johor Bahru, Malaysia</p>
-            <ul class="entry-points">
-              <li>Computer-vision fall detection — preprocessing, training, evaluation</li>
-              <li>Labelled video data + augmentation to boost small-dataset performance</li>
-              <li>AI algorithm R&amp;D in an agile team, reporting to the founder</li>
-            </ul>
-          </article>
-        </section>
-
       </div>
     </div>
+
+    <!-- ============ EDUCATION (sidebar on desktop, bottom on mobile) ============ -->
+    <aside class="education-block">
+      <h2 class="section-label">Education</h2>
+      <div class="edu">
+        <div class="edu-head">
+          <span class="edu-school">Universiti Malaya</span>
+          <span class="edu-date">2023 – 2025</span>
+        </div>
+        <p class="edu-meta">M.Data Science · CGPA 4.0</p>
+      </div>
+      <div class="edu">
+        <div class="edu-head">
+          <span class="edu-school">Monash University</span>
+          <span class="edu-date">2018 – 2021</span>
+        </div>
+        <p class="edu-meta">B.Computer Science (Advanced)</p>
+      </div>
+    </aside>
   </main>
 </body>
 </html>

@@ -37,12 +37,18 @@ a:hover { border-bottom-color: currentColor; }
   padding: 72px 56px 96px;
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 64px;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+    "side content"
+    "edu  content";
+  gap: 28px 64px;
   align-items: start;
 }
 
 /* ---------- SIDEBAR ---------- */
-.sidebar { position: sticky; top: 72px; }
+.sidebar { grid-area: side; position: sticky; top: 72px; }
+.content { grid-area: content; }
+.education-block { grid-area: edu; }
 
 .name {
   font-size: 30px;
@@ -89,9 +95,7 @@ a:hover { border-bottom-color: currentColor; }
 }
 .resume-btn:hover { opacity: 0.82; border-bottom: none; }
 
-/* ---------- SIDEBAR EDUCATION ---------- */
-.sidebar-section { margin-top: 28px; }
-
+/* ---------- EDUCATION ---------- */
 .edu { margin-bottom: 14px; }
 .edu-head {
   display: flex;
@@ -136,6 +140,9 @@ a:hover { border-bottom-color: currentColor; }
   text-transform: uppercase;
   color: var(--faint);
   margin-bottom: 18px;
+}
+.section-label::before {
+  content: "// ";
 }
 .section-label.spaced { margin-top: 36px; }
 
@@ -189,10 +196,17 @@ a:hover { border-bottom-color: currentColor; }
 @media (max-width: 860px) {
   .page {
     grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-rows: none;
+    grid-template-areas:
+      "side"
+      "content"
+      "edu";
+    gap: 2px;
     padding: 40px 24px 64px;
   }
   .sidebar { position: static; max-width: 320px; }
+  .content { margin-top: 18px; }
+  .education-block { margin-top: 10px; }
   .columns { grid-template-columns: 1fr; gap: 0; }
   .col + .col .section-label { margin-top: 12px; }
 }
